@@ -336,6 +336,7 @@ namespace WeaponPaints
 		{
 			if (weapon.CBodyComponent?.SceneNode == null) return;
 			var skeleton = weapon.CBodyComponent.SceneNode.GetSkeletonInstance();
+			// I changed this and I want GitHub actions to compile it. Fesiug
 			var value = (ulong)(isLegacy ? 1/*2*/ : 1);
 
 			if (skeleton.ModelState.MeshGroupMask != value)
