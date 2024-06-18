@@ -336,7 +336,7 @@ namespace WeaponPaints
 		{
 			if (weapon.CBodyComponent?.SceneNode == null) return;
 			var skeleton = weapon.CBodyComponent.SceneNode.GetSkeletonInstance();
-			var value = (ulong)(isLegacy ? 2 : 1);
+			var value = (ulong)(isLegacy ? 1/*2*/ : 1);
 
 			if (skeleton.ModelState.MeshGroupMask != value)
 			{
